@@ -1,32 +1,3 @@
-
-# Pseudocode
-# TranslateNumber class
-#
-# #translate_digit
-# INPUT: a single number integer
-# OUTPUT: string equivalent
-#
-# #translate_tens
-# INPUT:  string of two digits
-# OUTPUT: string of word representing hundreths place
-# STEPS:
-#               IF hundreds place is a one do elevens case statment
-#                ELSE do hundreds place in case statement and call translate singles
-#               END
-#
-# #translate_hundreds
-# INPUT: integer of three numbers
-# OUTPUT: string representing hundreds, tens and digits
-# STEPS: call
-#
-# #translate
-# INPUT: instance variables
-# OUTPUT:  Result of each group of three translation plus modifier
-# STEPS: FOR EACH group of 3
-#                 store result  of translate_hundreds  and modifier_lookup in array
-#              END
-#              RETURN reversed joined array , trim final spaces
-
 class TranslateNumber
 
   def initialize(number)
@@ -123,7 +94,8 @@ class TranslateNumber
 end
 
 
-# DRIVER TESTS GO BELOW THIS LINE
+# DRIVER TESTS
+# Add a test here to prove a deficiency
 digit_translator = TranslateNumber.new(1)
 p digit_translator.translate_digit(1) == "one"
 
